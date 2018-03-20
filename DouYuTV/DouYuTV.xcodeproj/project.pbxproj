@@ -97,11 +97,11 @@
 		A785126820610D5F003C0A01 /* DouYuTV */ = {
 			isa = PBXGroup;
 			children = (
+				A78512972061150B003C0A01 /* Classes */,
 				A785126920610D5F003C0A01 /* AppDelegate.swift */,
 				A785126B20610D5F003C0A01 /* ViewController.swift */,
 				A785126D20610D5F003C0A01 /* Main.storyboard */,
 				A785127020610D5F003C0A01 /* Assets.xcassets */,
-				A785127220610D5F003C0A01 /* LaunchScreen.storyboard */,
 				A785127520610D5F003C0A01 /* Info.plist */,
 			);
 			path = DouYuTV;
@@ -110,6 +110,7 @@
 		A785127D20610D5F003C0A01 /* DouYuTVTests */ = {
 			isa = PBXGroup;
 			children = (
+				A785127220610D5F003C0A01 /* LaunchScreen.storyboard */,
 				A785127E20610D5F003C0A01 /* DouYuTVTests.swift */,
 				A785128020610D5F003C0A01 /* Info.plist */,
 			);
@@ -123,6 +124,77 @@
 				A785128B20610D5F003C0A01 /* Info.plist */,
 			);
 			path = DouYuTVUITests;
+			sourceTree = "<group>";
+		};
+		A78512972061150B003C0A01 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A785129F20611578003C0A01 /* Main */,
+				A78512982061150B003C0A01 /* Home */,
+				A785129B2061150B003C0A01 /* Classify */,
+				A785129C2061150B003C0A01 /* Follow */,
+				A785129D2061150B003C0A01 /* FishBar */,
+				A785129E2061150B003C0A01 /* Profile */,
+				A78512992061150B003C0A01 /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A78512982061150B003C0A01 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A78512992061150B003C0A01 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A785129A2061150B003C0A01 /* Extension */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A785129A2061150B003C0A01 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A785129B2061150B003C0A01 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		A785129C2061150B003C0A01 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		A785129D2061150B003C0A01 /* FishBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FishBar;
+			sourceTree = "<group>";
+		};
+		A785129E2061150B003C0A01 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A785129F20611578003C0A01 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -426,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 373E7V4KDR;
 				INFOPLIST_FILE = DouYuTV/Info.plist;
@@ -441,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 373E7V4KDR;
 				INFOPLIST_FILE = DouYuTV/Info.plist;
