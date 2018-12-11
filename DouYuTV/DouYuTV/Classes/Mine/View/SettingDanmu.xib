@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YBm-5G-vBa" customClass="SettingDanmu" customModule="DouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="216" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-58-o6y">
+                    <rect key="frame" x="0.0" y="0.0" width="216" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Im2-ev-jkG" userLabel="微信" customClass="XQShareButton" customModule="DouYuTV" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="顶部" image="btn_danmu_top_set">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="dy_share_to_weixin_highlight"/>
+                            <connections>
+                                <action selector="topButtonClicked:" destination="YBm-5G-vBa" eventType="touchUpInside" id="PJn-Ci-fMl"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3Y-e6-Qgn" userLabel="微博" customClass="XQShareButton" customModule="DouYuTV" customModuleProvider="target">
+                            <rect key="frame" x="144" y="0.0" width="72" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="底部" image="btn_danmu_bottom_set">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="dy_share_to_sina_highlight"/>
+                            <connections>
+                                <action selector="bottomButtonClicked:" destination="YBm-5G-vBa" eventType="touchUpInside" id="HIO-nT-qO7"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eko-Ip-MLe" userLabel="朋友圈" customClass="XQShareButton" customModule="DouYuTV" customModuleProvider="target">
+                            <rect key="frame" x="72" y="0.0" width="72" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="nie-ss-MRO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <state key="normal" title="全屏" image="btn_danmu_all_selected_set">
+                                <color key="titleColor" red="0.97777014970779419" green="0.47082865238189697" blue="0.02433466725051403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" image="dy_share_to_friend_highlight"/>
+                            <connections>
+                                <action selector="allButtonClicked:" destination="YBm-5G-vBa" eventType="touchUpInside" id="ELF-dn-Fuz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Eko-Ip-MLe" secondAttribute="bottom" id="8sY-3q-si3"/>
+                        <constraint firstAttribute="bottom" secondItem="Eko-Ip-MLe" secondAttribute="bottom" id="ArY-5I-0d9"/>
+                        <constraint firstItem="z3Y-e6-Qgn" firstAttribute="width" secondItem="Im2-ev-jkG" secondAttribute="width" id="BbO-8e-qYT"/>
+                        <constraint firstItem="Eko-Ip-MLe" firstAttribute="leading" secondItem="Im2-ev-jkG" secondAttribute="trailing" id="Cx3-Aa-5Ol"/>
+                        <constraint firstAttribute="trailing" secondItem="z3Y-e6-Qgn" secondAttribute="trailing" id="D0S-xc-Oq8"/>
+                        <constraint firstItem="z3Y-e6-Qgn" firstAttribute="height" secondItem="Im2-ev-jkG" secondAttribute="height" id="E3l-Vg-c7f"/>
+                        <constraint firstItem="Eko-Ip-MLe" firstAttribute="width" secondItem="Im2-ev-jkG" secondAttribute="width" id="Kvx-VU-Mw7"/>
+                        <constraint firstItem="Im2-ev-jkG" firstAttribute="top" secondItem="Eko-Ip-MLe" secondAttribute="top" id="MEW-3n-Yjb"/>
+                        <constraint firstItem="z3Y-e6-Qgn" firstAttribute="leading" secondItem="Eko-Ip-MLe" secondAttribute="trailing" id="P9R-Ek-Crx"/>
+                        <constraint firstItem="Eko-Ip-MLe" firstAttribute="top" secondItem="3cT-58-o6y" secondAttribute="top" id="U8e-UQ-N20"/>
+                        <constraint firstItem="Eko-Ip-MLe" firstAttribute="height" secondItem="Im2-ev-jkG" secondAttribute="height" id="cub-cX-0M8"/>
+                        <constraint firstAttribute="bottom" secondItem="Im2-ev-jkG" secondAttribute="bottom" id="nWg-oc-BVT"/>
+                        <constraint firstItem="z3Y-e6-Qgn" firstAttribute="top" secondItem="Eko-Ip-MLe" secondAttribute="top" id="pEB-8z-ZI0"/>
+                        <constraint firstItem="Im2-ev-jkG" firstAttribute="leading" secondItem="3cT-58-o6y" secondAttribute="leading" id="t99-7a-USs"/>
+                        <constraint firstAttribute="bottom" secondItem="z3Y-e6-Qgn" secondAttribute="bottom" id="zu3-hq-Nal"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3cT-58-o6y" firstAttribute="trailing" secondItem="iwO-nq-eTH" secondAttribute="trailing" id="0u1-pE-t7b"/>
+                <constraint firstItem="iwO-nq-eTH" firstAttribute="bottom" secondItem="3cT-58-o6y" secondAttribute="bottom" id="1mS-Tk-CNI"/>
+                <constraint firstItem="3cT-58-o6y" firstAttribute="leading" secondItem="iwO-nq-eTH" secondAttribute="leading" id="We1-Ij-wep"/>
+                <constraint firstItem="3cT-58-o6y" firstAttribute="top" secondItem="iwO-nq-eTH" secondAttribute="top" id="hKe-FU-cww"/>
+                <constraint firstItem="3cT-58-o6y" firstAttribute="leading" secondItem="iwO-nq-eTH" secondAttribute="leading" id="qGr-T7-MQT"/>
+                <constraint firstItem="iwO-nq-eTH" firstAttribute="trailing" secondItem="3cT-58-o6y" secondAttribute="trailing" id="rws-cW-uJH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="iwO-nq-eTH"/>
+            <connections>
+                <outlet property="allBtn" destination="Eko-Ip-MLe" id="QG2-m5-pto"/>
+                <outlet property="bottomBtn" destination="z3Y-e6-Qgn" id="LYR-G2-Q6M"/>
+                <outlet property="topBtn" destination="Im2-ev-jkG" id="k0Z-Zm-WPO"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="194"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_danmu_all_selected_set" width="36" height="25"/>
+        <image name="btn_danmu_bottom_set" width="36" height="25"/>
+        <image name="btn_danmu_top_set" width="36" height="25"/>
+        <image name="dy_share_to_friend_highlight" width="44" height="44"/>
+        <image name="dy_share_to_sina_highlight" width="44" height="44"/>
+        <image name="dy_share_to_weixin_highlight" width="44" height="44"/>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TotalBrocastView" customModule="DouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="48"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHP-XO-Jbc">
+                    <rect key="frame" x="166" y="2" width="43" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.57700128424657537" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="column_placeholder_wing_left" translatesAutoresizingMaskIntoConstraints="NO" id="Z8k-ck-29W" userLabel="左边">
+                    <rect key="frame" x="130" y="6" width="16" height="4"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="column_placeholder_wing_right" translatesAutoresizingMaskIntoConstraints="NO" id="R3g-D4-0sj" userLabel="右边">
+                    <rect key="frame" x="229" y="6" width="16" height="4"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BHP-XO-Jbc" firstAttribute="leading" secondItem="Z8k-ck-29W" secondAttribute="trailing" constant="20" id="4UN-4e-2Jx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BHP-XO-Jbc" secondAttribute="trailing" constant="167" id="O4U-47-hCs"/>
+                <constraint firstItem="Z8k-ck-29W" firstAttribute="centerY" secondItem="BHP-XO-Jbc" secondAttribute="centerY" id="Z6z-mv-CaI"/>
+                <constraint firstItem="R3g-D4-0sj" firstAttribute="top" secondItem="BHP-XO-Jbc" secondAttribute="bottom" constant="-8" id="cIB-LS-4T1"/>
+                <constraint firstItem="R3g-D4-0sj" firstAttribute="leading" secondItem="BHP-XO-Jbc" secondAttribute="trailing" constant="20" id="ivS-ih-QZG"/>
+                <constraint firstItem="BHP-XO-Jbc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="2" id="x8e-n9-MGt"/>
+                <constraint firstItem="BHP-XO-Jbc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="166" id="xnk-5a-vha"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="102" y="-30"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="column_placeholder_wing_left" width="16" height="4"/>
+        <image name="column_placeholder_wing_right" width="16" height="4"/>
+    </resources>
+</document>

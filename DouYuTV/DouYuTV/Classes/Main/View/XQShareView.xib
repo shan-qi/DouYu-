@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XQShareView" customModule="DouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NCv-np-7Wx" userLabel="SplitLine">
+                    <rect key="frame" x="0.0" y="139" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="tKK-qv-Zf2"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mau-AI-VUa">
+                    <rect key="frame" x="169" y="150" width="37" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="BN4-Te-d9g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTx-bb-xyw">
+                    <rect key="frame" x="0.0" y="49" width="375" height="80"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72q-cs-PsW" userLabel="微信" customClass="XQShareButton" customModule="DouYuTV" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="80"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="微信" image="dy_share_to_weixin_normal">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="dy_share_to_weixin_highlight"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-wz-wde" userLabel="微博" customClass="XQShareButton" customModule="DouYuTV" customModuleProvider="target">
+                            <rect key="frame" x="250" y="0.0" width="125" height="80"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="微博" image="dy_share_to_sina_normal">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="dy_share_to_sina_highlight"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0m-pa-3Mp" userLabel="朋友圈" customClass="XQShareButton" customModule="DouYuTV" customModuleProvider="target">
+                            <rect key="frame" x="125" y="0.0" width="125" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="wfl-dT-ueK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="朋友圈" image="dy_share_to_friend_normal">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <state key="selected" image="dy_share_to_friend_highlight"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="h0m-pa-3Mp" firstAttribute="height" secondItem="72q-cs-PsW" secondAttribute="height" id="3a9-na-O93"/>
+                        <constraint firstItem="hlv-wz-wde" firstAttribute="height" secondItem="72q-cs-PsW" secondAttribute="height" id="4An-oh-TRh"/>
+                        <constraint firstAttribute="trailing" secondItem="hlv-wz-wde" secondAttribute="trailing" id="C2f-gr-UOA"/>
+                        <constraint firstItem="h0m-pa-3Mp" firstAttribute="leading" secondItem="72q-cs-PsW" secondAttribute="trailing" id="EDa-zd-Oyu"/>
+                        <constraint firstAttribute="bottom" secondItem="h0m-pa-3Mp" secondAttribute="bottom" id="LBd-Kn-grC"/>
+                        <constraint firstAttribute="bottom" secondItem="h0m-pa-3Mp" secondAttribute="bottom" id="WoN-WD-aid"/>
+                        <constraint firstAttribute="bottom" secondItem="hlv-wz-wde" secondAttribute="bottom" id="ZPo-ua-hxO"/>
+                        <constraint firstItem="hlv-wz-wde" firstAttribute="top" secondItem="h0m-pa-3Mp" secondAttribute="top" id="Zoy-5a-pEn"/>
+                        <constraint firstItem="hlv-wz-wde" firstAttribute="width" secondItem="72q-cs-PsW" secondAttribute="width" id="apI-P4-eXC"/>
+                        <constraint firstItem="h0m-pa-3Mp" firstAttribute="width" secondItem="72q-cs-PsW" secondAttribute="width" id="dqr-m1-5mG"/>
+                        <constraint firstItem="hlv-wz-wde" firstAttribute="leading" secondItem="h0m-pa-3Mp" secondAttribute="trailing" id="hPc-qk-FWO"/>
+                        <constraint firstItem="72q-cs-PsW" firstAttribute="top" secondItem="h0m-pa-3Mp" secondAttribute="top" id="hdp-bz-Dzs"/>
+                        <constraint firstItem="h0m-pa-3Mp" firstAttribute="top" secondItem="fTx-bb-xyw" secondAttribute="top" id="nMu-4a-vIU"/>
+                        <constraint firstItem="72q-cs-PsW" firstAttribute="leading" secondItem="fTx-bb-xyw" secondAttribute="leading" id="sFo-bS-SN0"/>
+                        <constraint firstAttribute="bottom" secondItem="72q-cs-PsW" secondAttribute="bottom" id="zxk-aV-lB7"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="分享到" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDx-ch-40g">
+                    <rect key="frame" x="166" y="20" width="53" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fTx-bb-xyw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0Ih-iL-1qj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fTx-bb-xyw" secondAttribute="trailing" id="8r3-iO-3Ds"/>
+                <constraint firstItem="mau-AI-VUa" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="CF1-re-NOj"/>
+                <constraint firstItem="NCv-np-7Wx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="N3Q-gz-K89"/>
+                <constraint firstItem="NCv-np-7Wx" firstAttribute="top" secondItem="fTx-bb-xyw" secondAttribute="bottom" constant="10" id="b4F-VU-VrM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="mau-AI-VUa" secondAttribute="bottom" constant="10" id="ce4-OQ-t4D"/>
+                <constraint firstAttribute="trailing" secondItem="NCv-np-7Wx" secondAttribute="trailing" id="fNm-Hf-H2f"/>
+                <constraint firstItem="mau-AI-VUa" firstAttribute="top" secondItem="NCv-np-7Wx" secondAttribute="bottom" constant="10" id="i45-W9-UN3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="44" y="201"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dy_share_to_friend_highlight" width="44" height="44"/>
+        <image name="dy_share_to_friend_normal" width="44" height="44"/>
+        <image name="dy_share_to_sina_highlight" width="44" height="44"/>
+        <image name="dy_share_to_sina_normal" width="44" height="44"/>
+        <image name="dy_share_to_weixin_highlight" width="44" height="44"/>
+        <image name="dy_share_to_weixin_normal" width="44" height="44"/>
+    </resources>
+</document>

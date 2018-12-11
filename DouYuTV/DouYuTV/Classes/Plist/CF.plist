@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>cfID</key>
+		<string>2_178</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>萌妹</string>
+		<key>cfID</key>
+		<string>3_771</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>枪神</string>
+		<key>cfID</key>
+		<string>3_5</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>娱乐</string>
+		<key>cfID</key>
+		<string>3_772</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>生存特训</string>
+		<key>cfID</key>
+		<string>3_806</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>战争风云</string>
+		<key>cfID</key>
+		<string>3_807</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>经典竞技</string>
+		<key>cfID</key>
+		<string>3_809</string>
+	</dict>
+</array>
+</plist>

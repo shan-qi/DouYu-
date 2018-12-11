@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>wholeArmyID</key>
+		<string>2_349</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>刚枪大神</string>
+		<key>wholeArmyID</key>
+		<string>3_830</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>鱼塘霸主</string>
+		<key>wholeArmyID</key>
+		<string>3_831</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>蛇皮操作</string>
+		<key>wholeArmyID</key>
+		<string>3_832</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>金牌教练</string>
+		<key>wholeArmyID</key>
+		<string>3_833</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>萌妹主播</string>
+		<key>wholeArmyID</key>
+		<string>3_834</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>heartStoneID</key>
+		<string>2_2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>竞技场</string>
+		<key>heartStoneID</key>
+		<string>3_155</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>天梯</string>
+		<key>heartStoneID</key>
+		<string>3_167</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>妹纸主播</string>
+		<key>heartStoneID</key>
+		<string>3_169</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>国服登顶</string>
+		<key>heartStoneID</key>
+		<string>3_275</string>
+	</dict>
+</array>
+</plist>

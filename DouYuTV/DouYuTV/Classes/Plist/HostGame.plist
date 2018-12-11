@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>hostGameID</key>
+		<string>2_19</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>主机单机</string>
+		<key>hostGameID</key>
+		<string>3_171</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>黑暗逃生</string>
+		<key>hostGameID</key>
+		<string>3_1038</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>独立indi...</string>
+		<key>hostGameID</key>
+		<string>3_166</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>恐怖解谜</string>
+		<key>hostGameID</key>
+		<string>3_96</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>模拟经营</string>
+		<key>hostGameID</key>
+		<string>3_98</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>怀旧游戏</string>
+		<key>hostGameID</key>
+		<string>3_97</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>格斗游戏</string>
+		<key>hostGameID</key>
+		<string>3_201</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>wegame</string>
+		<key>hostGameID</key>
+		<string>3_202</string>
+	</dict>
+</array>
+</plist>

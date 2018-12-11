@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>qqCarID</key>
+		<string>2_331</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>车技大神</string>
+		<key>qqCarID</key>
+		<string>3_798</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>迷妹声优</string>
+		<key>qqCarID</key>
+		<string>3_799</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>氪金窍门</string>
+		<key>qqCarID</key>
+		<string>3_800</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>崛起新秀</string>
+		<key>qqCarID</key>
+		<string>3_801</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>休闲电台</string>
+		<key>qqCarID</key>
+		<string>3_803</string>
+	</dict>
+</array>
+</plist>

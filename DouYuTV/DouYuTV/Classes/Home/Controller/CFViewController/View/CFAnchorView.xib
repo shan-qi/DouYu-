@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Tk6-P3-36G" customClass="CFAnchorView" customModule="DouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="207"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="HlC-b3-g7r">
+                    <rect key="frame" x="0.0" y="30" width="426" height="177"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="hFZ-r4-106">
+                        <size key="itemSize" width="125" height="110"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="Tk6-P3-36G" id="abc-Xg-CuG"/>
+                        <outlet property="delegate" destination="Tk6-P3-36G" id="bOt-Am-Ozk"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="njn-TU-3ki">
+                    <rect key="frame" x="0.0" y="0.0" width="426" height="30"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_rs_anchor_noliving" translatesAutoresizingMaskIntoConstraints="NO" id="4lM-6R-np4">
+                            <rect key="frame" x="10" y="10" width="19" height="11"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播推荐" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A46-DO-J24">
+                            <rect key="frame" x="39" y="3" width="78" height="23"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="A46-DO-J24" secondAttribute="bottom" constant="4" id="9MA-8R-YvN"/>
+                        <constraint firstItem="A46-DO-J24" firstAttribute="top" secondItem="njn-TU-3ki" secondAttribute="top" constant="3" id="FTs-Zx-4iL"/>
+                        <constraint firstItem="A46-DO-J24" firstAttribute="leading" secondItem="4lM-6R-np4" secondAttribute="trailing" constant="10" id="iqm-xU-ljs"/>
+                        <constraint firstItem="4lM-6R-np4" firstAttribute="leading" secondItem="njn-TU-3ki" secondAttribute="leading" constant="10" id="qHV-8v-owX"/>
+                        <constraint firstItem="4lM-6R-np4" firstAttribute="top" secondItem="njn-TU-3ki" secondAttribute="top" constant="10" id="wjD-95-MuG"/>
+                        <constraint firstAttribute="bottom" secondItem="4lM-6R-np4" secondAttribute="bottom" constant="9" id="woa-S4-CSu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0Pr-In-GDa" firstAttribute="trailing" secondItem="HlC-b3-g7r" secondAttribute="trailing" id="2cy-Re-Hqv"/>
+                <constraint firstItem="HlC-b3-g7r" firstAttribute="top" secondItem="0Pr-In-GDa" secondAttribute="top" constant="30" id="BdJ-cL-oUt"/>
+                <constraint firstItem="HlC-b3-g7r" firstAttribute="top" secondItem="njn-TU-3ki" secondAttribute="bottom" id="NXd-nH-hbC"/>
+                <constraint firstAttribute="bottom" secondItem="HlC-b3-g7r" secondAttribute="bottom" id="W9C-FY-sGu"/>
+                <constraint firstItem="njn-TU-3ki" firstAttribute="leading" secondItem="0Pr-In-GDa" secondAttribute="leading" id="WEu-HD-T8y"/>
+                <constraint firstItem="HlC-b3-g7r" firstAttribute="leading" secondItem="0Pr-In-GDa" secondAttribute="leading" id="Wt8-Uu-ThO"/>
+                <constraint firstItem="njn-TU-3ki" firstAttribute="top" secondItem="0Pr-In-GDa" secondAttribute="top" id="hZL-hI-Xlb"/>
+                <constraint firstItem="0Pr-In-GDa" firstAttribute="trailing" secondItem="njn-TU-3ki" secondAttribute="trailing" id="hsq-za-LaB"/>
+                <constraint firstItem="HlC-b3-g7r" firstAttribute="top" secondItem="njn-TU-3ki" secondAttribute="bottom" id="jY6-OQ-PbR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0Pr-In-GDa"/>
+            <connections>
+                <outlet property="collectionView" destination="HlC-b3-g7r" id="3Ja-5j-aOa"/>
+            </connections>
+            <point key="canvasLocation" x="5" y="49.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search_rs_anchor_noliving" width="19" height="11"/>
+    </resources>
+</document>

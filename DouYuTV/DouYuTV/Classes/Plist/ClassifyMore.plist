@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>网游竞技</string>
+		<key>tab_id</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>单机热游</string>
+		<key>tab_id</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>手游休闲</string>
+		<key>tab_id</key>
+		<string>4</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>娱乐天地</string>
+		<key>tab_id</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>颜值</string>
+		<key>tab_id</key>
+		<string>26</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>科技教育</string>
+		<key>tab_id</key>
+		<string>7</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>正能量</string>
+		<key>tab_id</key>
+		<string>28</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>语音直播</string>
+		<key>tab_id</key>
+		<string>13</string>
+	</dict>
+</array>
+</plist>

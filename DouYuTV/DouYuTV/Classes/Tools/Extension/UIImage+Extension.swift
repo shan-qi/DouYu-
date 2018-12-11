@@ -1,0 +1,63 @@
+//
+//  UIImage+Extension.swift
+//  DouYuTV
+//
+//  Created by 单琦 on 2018/5/13.
+//  Copyright © 2018年 单琦. All rights reserved.
+//
+
+import UIKit
+
+extension UIImage {
+    /// 创建头像图像
+    ///
+    /// - parameter size:      尺寸
+    /// - parameter backColor: 背景颜色
+    ///
+    /// - returns: 裁切后的图像
+    func xq_avatarImage(size: CGSize?, backColor: UIColor = UIColor.white, lineColor: UIColor = UIColor.lightGray) -> UIImage? {
+        
+        var size = size
+        if size == nil {
+            size = self.size
+        }
+        let rect = CGRect(origin: CGPoint(), size: size!)
+        
+        UIGraphicsBeginImageContextWithOptions(rect.size, true, 0)
+        
+        backColor.setFill()
+        UIRectFill(rect)
+        
+        let path = UIBezierPath(ovalIn: rect)
+        path.addClip()
+        
+        draw(in: rect)
+        
+        let ovalPath = UIBezierPath(ovalIn: rect)
+        ovalPath.lineWidth = 2
+        lineColor.setStroke()
+        ovalPath.stroke()
+        
+        let result = UIGraphicsGetImageFromCurrentImageContext()
+        
+        UIGraphicsEndImageContext()
+        
+        return result
+    }
+    func scaleImage(scaleSize:CGFloat)->UIImage {
+        let reSize = CGSize(width: self.size.width * scaleSize, height: self.size.height * scaleSize)
+        return reSizeImage(reSize: reSize)
+    }
+    /**
+     *  重设图片大小
+     */
+    func reSizeImage(reSize:CGSize)->UIImage {
+        //UIGraphicsBeginImageContext(reSize);
+        UIGraphicsBeginImageContextWithOptions(reSize,false,UIScreen.main.scale)
+        self.draw(in: CGRect(x: 0, y: 0, width: reSize.width, height: reSize.height))
+        let reSizeImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        return reSizeImage
+    }
+
+}

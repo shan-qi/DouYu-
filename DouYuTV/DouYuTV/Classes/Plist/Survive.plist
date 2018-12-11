@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>suriveID</key>
+		<string>2_270</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>赛事直播</string>
+		<key>suriveID</key>
+		<string>3_1031</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>最终对决</string>
+		<key>suriveID</key>
+		<string>3_1125</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>技术上分</string>
+		<key>suriveID</key>
+		<string>3_517</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>顶上插旗</string>
+		<key>suriveID</key>
+		<string>3_814</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>妹纸主播</string>
+		<key>suriveID</key>
+		<string>3_516</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>秀翻全场</string>
+		<key>suriveID</key>
+		<string>3_518</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>花样作死</string>
+		<key>suriveID</key>
+		<string>3_720</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>职业选手</string>
+		<key>suriveID</key>
+		<string>3_1008</string>
+	</dict>
+</array>
+</plist>

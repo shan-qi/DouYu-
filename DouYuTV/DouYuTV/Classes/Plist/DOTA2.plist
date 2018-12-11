@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>dotaID</key>
+		<string>2_3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>DOTA2星...</string>
+		<key>dotaID</key>
+		<string>3_835</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>妹纸主播</string>
+		<key>dotaID</key>
+		<string>3_170</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>冠绝一世</string>
+		<key>dotaID</key>
+		<string>3_1036</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>绝活大神</string>
+		<key>dotaID</key>
+		<string>3_1033</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>天梯冲击</string>
+		<key>dotaID</key>
+		<string>3_1034</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>RPG</string>
+		<key>dotaID</key>
+		<string>3_175</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>赛事直播</string>
+		<key>dotaID</key>
+		<string>3_95</string>
+	</dict>
+</array>
+</plist>

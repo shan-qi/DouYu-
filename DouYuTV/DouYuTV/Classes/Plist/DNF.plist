@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>全部</string>
+		<key>dnfID</key>
+		<string>2_40</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>增幅天空</string>
+		<key>dnfID</key>
+		<string>3_60</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>格斗天王</string>
+		<key>dnfID</key>
+		<string>3_61</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>全能女神</string>
+		<key>dnfID</key>
+		<string>3_791</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>国服第一</string>
+		<key>dnfID</key>
+		<string>3_793</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>史诗达人</string>
+		<key>dnfID</key>
+		<string>3_59</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>神秘商人</string>
+		<key>dnfID</key>
+		<string>3_794</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DynamicCollectionViewVideoCell" customModule="DouYuTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="296" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k0W-xO-DUS">
+                        <rect key="frame" x="0.0" y="0.0" width="296" height="145"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_v_play" translatesAutoresizingMaskIntoConstraints="NO" id="BjX-ce-tBn">
+                        <rect key="frame" x="130" y="54" width="36" height="36"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="666次播放" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQo-h6-YDq">
+                        <rect key="frame" x="10" y="116.5" width="55" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="06:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S4I-he-j2P">
+                        <rect key="frame" x="256.5" y="116.5" width="29.5" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="S4I-he-j2P" firstAttribute="centerY" secondItem="rQo-h6-YDq" secondAttribute="centerY" id="08Q-6K-yJp"/>
+                <constraint firstItem="BjX-ce-tBn" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="1nY-AR-rn0"/>
+                <constraint firstItem="rQo-h6-YDq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="7Te-5k-xn5"/>
+                <constraint firstItem="k0W-xO-DUS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9u0-vq-qyd"/>
+                <constraint firstItem="BjX-ce-tBn" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="En2-Gg-2CF"/>
+                <constraint firstAttribute="bottom" secondItem="S4I-he-j2P" secondAttribute="bottom" constant="15" id="L9m-KR-wqI"/>
+                <constraint firstAttribute="bottom" secondItem="rQo-h6-YDq" secondAttribute="bottom" constant="15" id="SUY-De-2Kj"/>
+                <constraint firstItem="k0W-xO-DUS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hZK-hC-Ek0"/>
+                <constraint firstAttribute="trailing" secondItem="S4I-he-j2P" secondAttribute="trailing" constant="10" id="iIA-ux-7E1"/>
+                <constraint firstAttribute="bottom" secondItem="k0W-xO-DUS" secondAttribute="bottom" id="sT7-PV-d2X"/>
+                <constraint firstAttribute="trailing" secondItem="k0W-xO-DUS" secondAttribute="trailing" id="tdt-Vh-tAm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="296" height="145"/>
+            <connections>
+                <outlet property="playCount" destination="rQo-h6-YDq" id="owZ-06-a0p"/>
+                <outlet property="playTime" destination="S4I-he-j2P" id="UAu-hN-Uso"/>
+                <outlet property="videoImageView" destination="k0W-xO-DUS" id="DfD-jn-4rb"/>
+            </connections>
+            <point key="canvasLocation" x="-64" y="159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_v_play" width="36" height="36"/>
+    </resources>
+</document>
